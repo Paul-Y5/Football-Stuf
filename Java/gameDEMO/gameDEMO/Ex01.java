@@ -1,4 +1,4 @@
-package aula07;
+package gameDEMO;
 
 import java.util.ArrayList;
 import java.util.Scanner;

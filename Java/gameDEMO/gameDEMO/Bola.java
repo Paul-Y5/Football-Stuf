@@ -1,4 +1,4 @@
-package aula07;
+package gameDemo;
 
 public class Bola extends Movel {
     

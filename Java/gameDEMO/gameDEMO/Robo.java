@@ -1,4 +1,4 @@
-package aula07;
+package gameDEMO;
 
 public class Robo extends Movel {
 

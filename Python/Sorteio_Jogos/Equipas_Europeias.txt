@@ -1,0 +1,181 @@
+Rank|Clube|País|Competição
+1|Real Madrid|Espanha|Liga dos Campeões
+2|Manchester City|Inglaterra|Liga dos Campeões
+3|Bayern Munich|Alemanha|Liga dos Campeões
+4|Paris Saint-Germain|França|Liga dos Campeões
+5|Juventus|Itália|Liga dos Campeões
+6|Liverpool|Inglaterra|Liga dos Campeões
+7|Chelsea|Inglaterra|Liga dos Campeões
+8|Barcelona|Espanha|Liga dos Campeões
+9|Atletico Madrid|Espanha|Liga dos Campeões
+10|Borussia Dortmund|Alemanha|Liga dos Campeões
+11|Inter Milan|Itália|Liga dos Campeões
+12|AC Milan|Itália|Liga dos Campeões
+13|Ajax|Holanda|Liga dos Campeões
+14|RB Leipzig|Alemanha|Liga dos Campeões
+15|Sevilla|Espanha|Liga dos Campeões
+16|Porto|Portugal|Liga dos Campeões
+17|Benfica|Portugal|Liga dos Campeões
+18|Shakhtar Donetsk|Ucrânia|Liga dos Campeões
+19|Zenit|Rússia|Liga dos Campeões
+20|Lyon|França|Liga dos Campeões
+21|Lazio|Itália|Liga dos Campeões
+22|Atalanta|Itália|Liga dos Campeões
+23|Villarreal|Espanha|Liga dos Campeões
+24|Monaco|França|Liga dos Campeões
+25|Napoli|Itália|Liga dos Campeões
+26|Sporting CP|Portugal|Liga dos Campeões
+27|Dynamo Kyiv|Ucrânia|Liga dos Campeões
+28|Galatasaray|Turquia|Liga dos Campeões
+29|Olympiacos|Grécia|Liga dos Campeões
+30|Club Brugge|Bélgica|Liga dos Campeões
+31|Red Bull Salzburg|Áustria|Liga dos Campeões
+32|Celtic|Escócia|Liga dos Campeões
+33|Rangers|Escócia|Liga dos Campeões
+34|Fenerbahçe|Turquia|Liga dos Campeões
+35|Besiktas|Turquia|Liga dos Campeões
+36|Marseille|França|Liga dos Campeões
+37|PSV|Holanda|Liga dos Campeões
+38|Anderlecht|Bélgica|Liga dos Campeões
+39|Spartak Moscow|Rússia|Liga dos Campeões
+40|Lokomotiv Moscow|Rússia|Liga dos Campeões
+41|Basel|Suíça|Liga dos Campeões
+42|Young Boys|Suíça|Liga dos Campeões
+43|Dinamo Zagreb|Croácia|Liga dos Campeões
+44|Slavia Prague|República Tcheca|Liga dos Campeões
+45|Copenhagen|Dinamarca|Liga dos Campeões
+46|Malmo|Suécia|Liga dos Campeões
+47|Ludogorets|Bulgária|Liga dos Campeões
+48|Ferencvaros|Hungria|Liga dos Campeões
+49|Red Star Belgrade|Sérvia|Liga dos Campeões
+50|Sheriff Tiraspol|Moldávia|Liga dos Campeões
+51|Legia Warsaw|Polônia|Liga dos Campeões
+52|Slovan Bratislava|Eslováquia|Liga dos Campeões
+53|Dinamo Tbilisi|Geórgia|Liga dos Campeões
+60|FC Porto|Portugal|Liga dos Campeões
+61|Sevilla|Espanha|Liga Europa
+62|Arsenal|Inglaterra|Liga Europa
+63|Roma|Itália|Liga Europa
+64|Bayer Leverkusen|Alemanha|Liga Europa
+65|Napoli|Itália|Liga Europa
+66|Villarreal|Espanha|Liga Europa
+67|Lazio|Itália|Liga Europa
+68|Tottenham Hotspur|Inglaterra|Liga Europa
+69|Benfica|Portugal|Liga Europa
+70|PSV|Holanda|Liga Europa
+71|Monaco|França|Liga Europa
+72|Leicester City|Inglaterra|Liga Europa
+73|Real Sociedad|Espanha|Liga Europa
+74|Olympiacos|Grécia|Liga Europa
+75|Galatasaray|Turquia|Liga Europa
+76|Fenerbahçe|Turquia|Liga Europa
+77|Celtic|Escócia|Liga Europa
+78|Rangers|Escócia|Liga Europa
+79|Feyenoord|Holanda|Liga Europa
+80|AZ Alkmaar|Holanda|Liga Europa
+81|Basel|Suíça|Liga Europa
+82|Young Boys|Suíça|Liga Europa
+83|Dinamo Zagreb|Croácia|Liga Europa
+84|Slavia Prague|República Tcheca|Liga Europa
+85|Copenhagen|Dinamarca|Liga Europa
+86|Malmo|Suécia|Liga Europa
+87|Ludogorets|Bulgária|Liga Europa
+88|Ferencvaros|Hungria|Liga Europa
+89|Red Star Belgrade|Sérvia|Liga Europa
+90|Sheriff Tiraspol|Moldávia|Liga Europa
+91|Legia Warsaw|Polônia|Liga Europa
+92|Slovan Bratislava|Eslováquia|Liga Europa
+93|Dinamo Tbilisi|Geórgia|Liga Europa
+100|Roma|Itália|Liga Conferências Europa
+101|Tottenham Hotspur|Inglaterra|Liga Conferências Europa
+102|Leicester City|Inglaterra|Liga Conferências Europa
+103|Real Sociedad|Espanha|Liga Conferências Europa
+104|Feyenoord|Holanda|Liga Conferências Europa
+105|AZ Alkmaar|Holanda|Liga Conferências Europa
+106|Partizan|Sérvia|Liga Conferências Europa
+107|Vitesse|Holanda|Liga Conferências Europa
+108|Rapid Vienna|Áustria|Liga Conferências Europa
+109|Hajduk Split|Croácia|Liga Conferências Europa
+110|Rijeka|Croácia|Liga Conferências Europa
+111|Slovan Bratislava|Eslováquia|Liga Conferências Europa
+112|Sparta Prague|República Tcheca|Liga Conferências Europa
+113|BATE Borisov|Bielorrússia|Liga Conferências Europa
+114|Dinamo Minsk|Bielorrússia|Liga Conferências Europa
+115|Shakhtyor Soligorsk|Bielorrússia|Liga Conferências Europa
+116|Dinamo Brest|Bielorrússia|Liga Conferências Europa
+117|Zorya Luhansk|Ucrânia|Liga Conferências Europa
+118|Vorskla Poltava|Ucrânia|Liga Conferências Europa
+119|Olimpija Ljubljana|Eslovênia|Liga Conferências Europa
+120|Maribor|Eslovênia|Liga Conferências Europa
+121|Zilina|Eslováquia|Liga Conferências Europa
+122|DAC Dunajska Streda|Eslováquia|Liga Conferências Europa
+123|Hapoel Be'er Sheva|Israel|Liga Conferências Europa
+124|Maccabi Haifa|Israel|Liga Conferências Europa
+125|Maccabi Tel Aviv|Israel|Liga Conferências Europa
+126|Hapoel Haifa|Israel|Liga Conferências Europa
+127|Zalgiris Vilnius|Lituânia|Liga Conferências Europa
+128|Suduva|Lituânia|Liga Conferências Europa
+129|Riga FC|Letônia|Liga Conferências Europa
+130|Liepaja|Letônia|Liga Conferências Europa
+131|Dinamo Tbilisi|Geórgia|Liga Conferências Europa
+132|Saburtalo Tbilisi|Geórgia|Liga Conferências Europa
+133|Dinamo Batumi|Geórgia|Liga Conferências Europa
+134|Dinamo Minsk|Bielorrússia|Liga Conferências Europa
+135|Shakhtyor Soligorsk|Bielorrússia|Liga Conferências Europa
+136|Dinamo Brest|Bielorrússia|Liga Conferências Europa
+137|Zorya Luhansk|Ucrânia|Liga Conferências Europa
+138|Vorskla Poltava|Ucrânia|Liga Conferências Europa
+139|Olimpija Ljubljana|Eslovênia|Liga Conferências Europa
+140|Maribor|Eslovênia|Liga Conferências Europa
+141|Zilina|Eslováquia|Liga Conferências Europa
+142|DAC Dunajska Streda|Eslováquia|Liga Conferências Europa
+143|Hapoel Be'er Sheva|Israel|Liga Conferências Europa
+144|Maccabi Haifa|Israel|Liga Conferências Europa
+145|Maccabi Tel Aviv|Israel|Liga Conferências Europa
+146|Hapoel Haifa|Israel|Liga Conferências Europa
+147|Zalgiris Vilnius|Lituânia|Liga Conferências Europa
+148|Suduva|Lituânia|Liga Conferências Europa
+149|Riga FC|Letônia|Liga Conferências Europa
+150|Liepaja|Letônia|Liga Conferências Europa
+151|Dinamo Tbilisi|Geórgia|Liga Conferências Europa
+152|Saburtalo Tbilisi|Geórgia|Liga Conferências Europa
+153|Dinamo Batumi|Geórgia|Liga Conferências Europa
+154|Shamrock Rovers|Irlanda|Liga Conferências Europa
+155|Linfield|Irlanda do Norte|Liga Conferências Europa
+156|The New Saints|País de Gales|Liga Conferências Europa
+157|Connah's Quay Nomads|País de Gales|Liga Conferências Europa
+158|Dundalk|Irlanda|Liga Conferências Europa
+159|Bohemians|Irlanda|Liga Conferências Europa
+160|Glentoran|Irlanda do Norte|Liga Conferências Europa
+161|Bala Town|País de Gales|Liga Conferências Europa
+162|Derry City|Irlanda|Liga Conferências Europa
+163|Cliftonville|Irlanda do Norte|Liga Conferências Europa
+164|Coleraine|Irlanda do Norte|Liga Conferências Europa
+165|Larne|Irlanda do Norte|Liga Conferências Europa
+166|Glentoran|Irlanda do Norte|Liga Conferências Europa
+167|Crusaders|Irlanda do Norte|Liga Conferências Europa
+168|Ballymena United|Irlanda do Norte|Liga Conferências Europa
+169|Carrick Rangers|Irlanda do Norte|Liga Conferências Europa
+170|Portadown|Irlanda do Norte|Liga Conferências Europa
+171|Warrenpoint Town|Irlanda do Norte|Liga Conferências Europa
+172|Ballinamallard United|Irlanda do Norte|Liga Conferências Europa
+173|Dungannon Swifts|Irlanda do Norte|Liga Conferências Europa
+174|Institute|Irlanda do Norte|Liga Conferências Europa
+175|Lisburn Distillery|Irlanda do Norte|Liga Conferências Europa
+176|Loughgall|Irlanda do Norte|Liga Conferências Europa
+177|Newry City|Irlanda do Norte|Liga Conferências Europa
+178|Portstewart|Irlanda do Norte|Liga Conferências Europa
+179|Queen's University|Irlanda do Norte|Liga Conferências Europa
+180|Tobermore United|Irlanda do Norte|Liga Conferências Europa
+181|Ards|Irlanda do Norte|Liga Conferências Europa
+182|Ballyclare Comrades|Irlanda do Norte|Liga Conferências Europa
+183|Bangor|Irlanda do Norte|Liga Conferências Europa
+184|Carrick Rangers|Irlanda do Norte|Liga Conferências Europa
+185|Dergview|Irlanda do Norte|Liga Conferências Europa
+186|Dundela|Irlanda do Norte|Liga Conferências Europa
+187|HW Welders|Irlanda do Norte|Liga Conferências Europa
+188|Knockbreda|Irlanda do Norte|Liga Conferências Europa
+189|Larne|Irlanda do Norte|Liga Conferências Europa
+190|Limavady United|Irlanda do Norte|Liga Conferências Europa
+191|Lisburn Distillery|Irlanda do Norte|Liga Conferências Europa
+192|Loughgall|Irlanda do Norte|Liga Conferências Europa

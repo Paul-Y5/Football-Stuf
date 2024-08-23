@@ -1,4 +1,4 @@
-package aula07;
+package gameDEMO;
 
 public abstract class Forma {
 

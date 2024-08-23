@@ -1,0 +1,35 @@
+Rank|Clube|País|Competição
+1|Real Madrid|Espanha|Liga dos Campeões
+2|Manchester City|Inglaterra|Liga dos Campeões
+3|Bayern Munich|Alemanha|Liga dos Campeões
+4|Paris Saint-Germain|França|Liga dos Campeões
+5|Juventus|Itália|Liga dos Campeões
+6|Liverpool|Inglaterra|Liga dos Campeões
+7|Chelsea|Inglaterra|Liga dos Campeões
+8|Barcelona|Espanha|Liga dos Campeões
+9|Atletico Madrid|Espanha|Liga dos Campeões
+10|Borussia Dortmund|Alemanha|Liga dos Campeões
+11|Inter Milan|Itália|Liga dos Campeões
+12|AC Milan|Itália|Liga dos Campeões
+13|Ajax|Holanda|Liga dos Campeões
+14|RB Leipzig|Alemanha|Liga dos Campeões
+15|Sevilla|Espanha|Liga dos Campeões
+16|Porto|Portugal|Liga dos Campeões
+17|Benfica|Portugal|Liga dos Campeões
+18|Shakhtar Donetsk|Ucrânia|Liga dos Campeões
+19|Zenit|Rússia|Liga dos Campeões
+20|Lyon|França|Liga dos Campeões
+21|Lazio|Itália|Liga dos Campeões
+22|Atalanta|Itália|Liga dos Campeões
+23|Villarreal|Espanha|Liga dos Campeões
+24|Monaco|França|Liga dos Campeões
+25|Napoli|Itália|Liga dos Campeões
+26|Sporting CP|Portugal|Liga dos Campeões
+27|Dynamo Kyiv|Ucrânia|Liga dos Campeões
+28|Galatasaray|Turquia|Liga dos Campeões
+29|Olympiacos|Grécia|Liga dos Campeões
+30|Club Brugge|Bélgica|Liga dos Campeões
+31|Red Bull Salzburg|Áustria|Liga dos Campeões
+32|Celtic|Escócia|Liga dos Campeões
+33|Rangers|Escócia|Liga dos Campeões
+34|Fenerbahçe|Turquia|Liga dos Campeões
