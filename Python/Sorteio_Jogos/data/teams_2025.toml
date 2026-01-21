@@ -1,0 +1,576 @@
+# UEFA European Competitions Teams 2025/26
+# ==========================================
+# 
+# Ficheiro de configuracao em formato TOML
+# Teste comparativo: TOML vs JSON para configuracao de dados estruturados
+#
+# TOML (Tom's Obvious Minimal Language) oferece:
+# - Sintaxe mais legivel que JSON
+# - Suporte nativo para comentarios
+# - Tipagem mais clara
+# - Melhor para ficheiros de configuracao editados manualmente
+
+[champions_league]
+name = "UEFA Champions League 2025/26"
+teams_count = 36
+matches_per_team = 8
+home_matches = 4
+away_matches = 4
+
+[[champions_league.pots.pot1]]
+name = "Real Madrid"
+country = "ESP"
+coefficient = 136.0
+
+[[champions_league.pots.pot1]]
+name = "Manchester City"
+country = "ENG"
+coefficient = 128.0
+
+[[champions_league.pots.pot1]]
+name = "Bayern Munich"
+country = "GER"
+coefficient = 124.0
+
+[[champions_league.pots.pot1]]
+name = "PSG"
+country = "FRA"
+coefficient = 104.0
+
+[[champions_league.pots.pot1]]
+name = "Liverpool"
+country = "ENG"
+coefficient = 99.0
+
+[[champions_league.pots.pot1]]
+name = "Inter Milan"
+country = "ITA"
+coefficient = 98.0
+
+[[champions_league.pots.pot1]]
+name = "Borussia Dortmund"
+country = "GER"
+coefficient = 91.0
+
+[[champions_league.pots.pot1]]
+name = "Barcelona"
+country = "ESP"
+coefficient = 88.0
+
+[[champions_league.pots.pot1]]
+name = "Leverkusen"
+country = "GER"
+coefficient = 80.0
+
+[[champions_league.pots.pot2]]
+name = "Atletico Madrid"
+country = "ESP"
+coefficient = 78.0
+
+[[champions_league.pots.pot2]]
+name = "Juventus"
+country = "ITA"
+coefficient = 76.0
+
+[[champions_league.pots.pot2]]
+name = "Benfica"
+country = "POR"
+coefficient = 75.0
+
+[[champions_league.pots.pot2]]
+name = "Arsenal"
+country = "ENG"
+coefficient = 72.0
+
+[[champions_league.pots.pot2]]
+name = "Club Brugge"
+country = "BEL"
+coefficient = 64.0
+
+[[champions_league.pots.pot2]]
+name = "Shakhtar"
+country = "UKR"
+coefficient = 62.0
+
+[[champions_league.pots.pot2]]
+name = "AC Milan"
+country = "ITA"
+coefficient = 60.0
+
+[[champions_league.pots.pot2]]
+name = "Atalanta"
+country = "ITA"
+coefficient = 58.0
+
+[[champions_league.pots.pot2]]
+name = "Sporting CP"
+country = "POR"
+coefficient = 55.0
+
+[[champions_league.pots.pot3]]
+name = "FC Porto"
+country = "POR"
+coefficient = 53.0
+
+[[champions_league.pots.pot3]]
+name = "Feyenoord"
+country = "NED"
+coefficient = 50.0
+
+[[champions_league.pots.pot3]]
+name = "PSV"
+country = "NED"
+coefficient = 48.0
+
+[[champions_league.pots.pot3]]
+name = "Celtic"
+country = "SCO"
+coefficient = 44.0
+
+[[champions_league.pots.pot3]]
+name = "Monaco"
+country = "FRA"
+coefficient = 42.0
+
+[[champions_league.pots.pot3]]
+name = "Aston Villa"
+country = "ENG"
+coefficient = 40.0
+
+[[champions_league.pots.pot3]]
+name = "Bologna"
+country = "ITA"
+coefficient = 38.0
+
+[[champions_league.pots.pot3]]
+name = "Lille"
+country = "FRA"
+coefficient = 36.0
+
+[[champions_league.pots.pot3]]
+name = "Girona"
+country = "ESP"
+coefficient = 35.0
+
+[[champions_league.pots.pot4]]
+name = "Stuttgart"
+country = "GER"
+coefficient = 33.0
+
+[[champions_league.pots.pot4]]
+name = "Sturm Graz"
+country = "AUT"
+coefficient = 30.0
+
+[[champions_league.pots.pot4]]
+name = "Brest"
+country = "FRA"
+coefficient = 28.0
+
+[[champions_league.pots.pot4]]
+name = "Salzburg"
+country = "AUT"
+coefficient = 26.0
+
+[[champions_league.pots.pot4]]
+name = "Red Star"
+country = "SRB"
+coefficient = 24.0
+
+[[champions_league.pots.pot4]]
+name = "Young Boys"
+country = "SUI"
+coefficient = 22.0
+
+[[champions_league.pots.pot4]]
+name = "Dinamo Zagreb"
+country = "CRO"
+coefficient = 20.0
+
+[[champions_league.pots.pot4]]
+name = "Sparta Prague"
+country = "CZE"
+coefficient = 18.0
+
+[[champions_league.pots.pot4]]
+name = "Slovan Bratislava"
+country = "SVK"
+coefficient = 16.0
+
+
+# Europa League
+[europa_league]
+name = "UEFA Europa League 2025/26"
+teams_count = 36
+matches_per_team = 8
+home_matches = 4
+away_matches = 4
+
+[[europa_league.pots.pot1]]
+name = "Roma"
+country = "ITA"
+coefficient = 85.0
+
+[[europa_league.pots.pot1]]
+name = "Man United"
+country = "ENG"
+coefficient = 82.0
+
+[[europa_league.pots.pot1]]
+name = "Lazio"
+country = "ITA"
+coefficient = 68.0
+
+[[europa_league.pots.pot1]]
+name = "Tottenham"
+country = "ENG"
+coefficient = 66.0
+
+[[europa_league.pots.pot1]]
+name = "Ajax"
+country = "NED"
+coefficient = 64.0
+
+[[europa_league.pots.pot1]]
+name = "Rangers"
+country = "SCO"
+coefficient = 52.0
+
+[[europa_league.pots.pot1]]
+name = "Frankfurt"
+country = "GER"
+coefficient = 50.0
+
+[[europa_league.pots.pot1]]
+name = "Porto"
+country = "POR"
+coefficient = 48.0
+
+[[europa_league.pots.pot1]]
+name = "Nice"
+country = "FRA"
+coefficient = 45.0
+
+[[europa_league.pots.pot2]]
+name = "Real Sociedad"
+country = "ESP"
+coefficient = 44.0
+
+[[europa_league.pots.pot2]]
+name = "AZ Alkmaar"
+country = "NED"
+coefficient = 42.0
+
+[[europa_league.pots.pot2]]
+name = "Braga"
+country = "POR"
+coefficient = 40.0
+
+[[europa_league.pots.pot2]]
+name = "Olympiacos"
+country = "GRE"
+coefficient = 38.0
+
+[[europa_league.pots.pot2]]
+name = "Lyon"
+country = "FRA"
+coefficient = 36.0
+
+[[europa_league.pots.pot2]]
+name = "Hoffenheim"
+country = "GER"
+coefficient = 34.0
+
+[[europa_league.pots.pot2]]
+name = "PAOK"
+country = "GRE"
+coefficient = 32.0
+
+[[europa_league.pots.pot2]]
+name = "Fenerbahce"
+country = "TUR"
+coefficient = 30.0
+
+[[europa_league.pots.pot2]]
+name = "Midtjylland"
+country = "DEN"
+coefficient = 28.0
+
+[[europa_league.pots.pot3]]
+name = "Galatasaray"
+country = "TUR"
+coefficient = 27.0
+
+[[europa_league.pots.pot3]]
+name = "Viktoria Plzen"
+country = "CZE"
+coefficient = 26.0
+
+[[europa_league.pots.pot3]]
+name = "Bodo/Glimt"
+country = "NOR"
+coefficient = 25.0
+
+[[europa_league.pots.pot3]]
+name = "Union SG"
+country = "BEL"
+coefficient = 24.0
+
+[[europa_league.pots.pot3]]
+name = "Dynamo Kyiv"
+country = "UKR"
+coefficient = 23.0
+
+[[europa_league.pots.pot3]]
+name = "Ludogorets"
+country = "BUL"
+coefficient = 22.0
+
+[[europa_league.pots.pot3]]
+name = "Athletic Club"
+country = "ESP"
+coefficient = 21.0
+
+[[europa_league.pots.pot3]]
+name = "Besiktas"
+country = "TUR"
+coefficient = 20.0
+
+[[europa_league.pots.pot3]]
+name = "Twente"
+country = "NED"
+coefficient = 19.0
+
+[[europa_league.pots.pot4]]
+name = "Elfsborg"
+country = "SWE"
+coefficient = 18.0
+
+[[europa_league.pots.pot4]]
+name = "Qarabag"
+country = "AZE"
+coefficient = 17.0
+
+[[europa_league.pots.pot4]]
+name = "RFS"
+country = "LAT"
+coefficient = 16.0
+
+[[europa_league.pots.pot4]]
+name = "FCSB"
+country = "ROU"
+coefficient = 15.0
+
+[[europa_league.pots.pot4]]
+name = "Maccabi TA"
+country = "ISR"
+coefficient = 14.0
+
+[[europa_league.pots.pot4]]
+name = "Malmo"
+country = "SWE"
+coefficient = 13.0
+
+[[europa_league.pots.pot4]]
+name = "Anderlecht"
+country = "BEL"
+coefficient = 12.0
+
+[[europa_league.pots.pot4]]
+name = "Rigas FS"
+country = "LAT"
+coefficient = 11.0
+
+[[europa_league.pots.pot4]]
+name = "Nantes"
+country = "FRA"
+coefficient = 10.0
+
+
+# Conference League
+[conference_league]
+name = "UEFA Conference League 2025/26"
+teams_count = 36
+matches_per_team = 6
+home_matches = 3
+away_matches = 3
+
+[[conference_league.pots.pot1]]
+name = "Chelsea"
+country = "ENG"
+coefficient = 70.0
+
+[[conference_league.pots.pot1]]
+name = "Copenhagen"
+country = "DEN"
+coefficient = 38.0
+
+[[conference_league.pots.pot1]]
+name = "Gent"
+country = "BEL"
+coefficient = 36.0
+
+[[conference_league.pots.pot1]]
+name = "Fiorentina"
+country = "ITA"
+coefficient = 34.0
+
+[[conference_league.pots.pot1]]
+name = "LASK"
+country = "AUT"
+coefficient = 32.0
+
+[[conference_league.pots.pot1]]
+name = "Partizan"
+country = "SRB"
+coefficient = 30.0
+
+[[conference_league.pots.pot1]]
+name = "Djurgarden"
+country = "SWE"
+coefficient = 28.0
+
+[[conference_league.pots.pot1]]
+name = "Vitoria SC"
+country = "POR"
+coefficient = 26.0
+
+[[conference_league.pots.pot1]]
+name = "Hearts"
+country = "SCO"
+coefficient = 24.0
+
+[[conference_league.pots.pot2]]
+name = "Basel"
+country = "SUI"
+coefficient = 23.0
+
+[[conference_league.pots.pot2]]
+name = "Rapid Wien"
+country = "AUT"
+coefficient = 22.0
+
+[[conference_league.pots.pot2]]
+name = "Heidenheim"
+country = "GER"
+coefficient = 21.0
+
+[[conference_league.pots.pot2]]
+name = "Molde"
+country = "NOR"
+coefficient = 20.0
+
+[[conference_league.pots.pot2]]
+name = "Shamrock"
+country = "IRL"
+coefficient = 19.0
+
+[[conference_league.pots.pot2]]
+name = "Panathinaikos"
+country = "GRE"
+coefficient = 18.0
+
+[[conference_league.pots.pot2]]
+name = "Lens"
+country = "FRA"
+coefficient = 17.0
+
+[[conference_league.pots.pot2]]
+name = "Betis"
+country = "ESP"
+coefficient = 16.0
+
+[[conference_league.pots.pot2]]
+name = "Jagiellonia"
+country = "POL"
+coefficient = 15.0
+
+[[conference_league.pots.pot3]]
+name = "Cercle Brugge"
+country = "BEL"
+coefficient = 14.0
+
+[[conference_league.pots.pot3]]
+name = "Astana"
+country = "KAZ"
+coefficient = 13.0
+
+[[conference_league.pots.pot3]]
+name = "TSC"
+country = "SRB"
+coefficient = 12.0
+
+[[conference_league.pots.pot3]]
+name = "Noah"
+country = "ARM"
+coefficient = 11.0
+
+[[conference_league.pots.pot3]]
+name = "St. Gallen"
+country = "SUI"
+coefficient = 10.0
+
+[[conference_league.pots.pot3]]
+name = "Legia Warsaw"
+country = "POL"
+coefficient = 9.0
+
+[[conference_league.pots.pot3]]
+name = "HJK Helsinki"
+country = "FIN"
+coefficient = 8.0
+
+[[conference_league.pots.pot3]]
+name = "Omonia"
+country = "CYP"
+coefficient = 7.0
+
+[[conference_league.pots.pot3]]
+name = "Vikingur"
+country = "ISL"
+coefficient = 6.0
+
+[[conference_league.pots.pot4]]
+name = "TNS"
+country = "WAL"
+coefficient = 5.5
+
+[[conference_league.pots.pot4]]
+name = "Larne"
+country = "NIR"
+coefficient = 5.0
+
+[[conference_league.pots.pot4]]
+name = "Apoel"
+country = "CYP"
+coefficient = 4.5
+
+[[conference_league.pots.pot4]]
+name = "Pafos"
+country = "CYP"
+coefficient = 4.0
+
+[[conference_league.pots.pot4]]
+name = "Borac"
+country = "BIH"
+coefficient = 3.5
+
+[[conference_league.pots.pot4]]
+name = "Celje"
+country = "SLO"
+coefficient = 3.0
+
+[[conference_league.pots.pot4]]
+name = "Petrocub"
+country = "MDA"
+coefficient = 2.5
+
+[[conference_league.pots.pot4]]
+name = "Dinamo Minsk"
+country = "BLR"
+coefficient = 2.0
+
+[[conference_league.pots.pot4]]
+name = "The New Saints"
+country = "WAL"
+coefficient = 1.5

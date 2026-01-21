@@ -1,0 +1,161 @@
+{
+    "champions_league": {
+        "name": "UEFA Champions League 2025/26",
+        "teams_count": 36,
+        "matches_per_team": 8,
+        "home_matches": 4,
+        "away_matches": 4,
+        "pots": {
+            "1": [
+                {"name": "Real Madrid", "country": "ESP", "coefficient": 136.0},
+                {"name": "Manchester City", "country": "ENG", "coefficient": 128.0},
+                {"name": "Bayern Munich", "country": "GER", "coefficient": 124.0},
+                {"name": "PSG", "country": "FRA", "coefficient": 104.0},
+                {"name": "Liverpool", "country": "ENG", "coefficient": 99.0},
+                {"name": "Inter Milan", "country": "ITA", "coefficient": 98.0},
+                {"name": "Borussia Dortmund", "country": "GER", "coefficient": 91.0},
+                {"name": "Barcelona", "country": "ESP", "coefficient": 88.0},
+                {"name": "Leverkusen", "country": "GER", "coefficient": 80.0}
+            ],
+            "2": [
+                {"name": "Atletico Madrid", "country": "ESP", "coefficient": 78.0},
+                {"name": "Juventus", "country": "ITA", "coefficient": 76.0},
+                {"name": "Benfica", "country": "POR", "coefficient": 75.0},
+                {"name": "Arsenal", "country": "ENG", "coefficient": 72.0},
+                {"name": "Club Brugge", "country": "BEL", "coefficient": 64.0},
+                {"name": "Shakhtar", "country": "UKR", "coefficient": 62.0},
+                {"name": "AC Milan", "country": "ITA", "coefficient": 60.0},
+                {"name": "Atalanta", "country": "ITA", "coefficient": 58.0},
+                {"name": "Sporting CP", "country": "POR", "coefficient": 55.0}
+            ],
+            "3": [
+                {"name": "FC Porto", "country": "POR", "coefficient": 53.0},
+                {"name": "Feyenoord", "country": "NED", "coefficient": 50.0},
+                {"name": "PSV", "country": "NED", "coefficient": 48.0},
+                {"name": "Celtic", "country": "SCO", "coefficient": 44.0},
+                {"name": "Monaco", "country": "FRA", "coefficient": 42.0},
+                {"name": "Aston Villa", "country": "ENG", "coefficient": 40.0},
+                {"name": "Bologna", "country": "ITA", "coefficient": 38.0},
+                {"name": "Lille", "country": "FRA", "coefficient": 36.0},
+                {"name": "Girona", "country": "ESP", "coefficient": 35.0}
+            ],
+            "4": [
+                {"name": "Stuttgart", "country": "GER", "coefficient": 33.0},
+                {"name": "Sturm Graz", "country": "AUT", "coefficient": 30.0},
+                {"name": "Brest", "country": "FRA", "coefficient": 28.0},
+                {"name": "Salzburg", "country": "AUT", "coefficient": 26.0},
+                {"name": "Red Star", "country": "SRB", "coefficient": 24.0},
+                {"name": "Young Boys", "country": "SUI", "coefficient": 22.0},
+                {"name": "Dinamo Zagreb", "country": "CRO", "coefficient": 20.0},
+                {"name": "Sparta Prague", "country": "CZE", "coefficient": 18.0},
+                {"name": "Slovan Bratislava", "country": "SVK", "coefficient": 16.0}
+            ]
+        }
+    },
+    "europa_league": {
+        "name": "UEFA Europa League 2025/26",
+        "teams_count": 36,
+        "matches_per_team": 8,
+        "home_matches": 4,
+        "away_matches": 4,
+        "pots": {
+            "1": [
+                {"name": "Roma", "country": "ITA", "coefficient": 85.0},
+                {"name": "Man United", "country": "ENG", "coefficient": 82.0},
+                {"name": "Lazio", "country": "ITA", "coefficient": 68.0},
+                {"name": "Tottenham", "country": "ENG", "coefficient": 66.0},
+                {"name": "Ajax", "country": "NED", "coefficient": 64.0},
+                {"name": "Rangers", "country": "SCO", "coefficient": 52.0},
+                {"name": "Frankfurt", "country": "GER", "coefficient": 50.0},
+                {"name": "Porto", "country": "POR", "coefficient": 48.0},
+                {"name": "Nice", "country": "FRA", "coefficient": 45.0}
+            ],
+            "2": [
+                {"name": "Real Sociedad", "country": "ESP", "coefficient": 44.0},
+                {"name": "AZ Alkmaar", "country": "NED", "coefficient": 42.0},
+                {"name": "Braga", "country": "POR", "coefficient": 40.0},
+                {"name": "Olympiacos", "country": "GRE", "coefficient": 38.0},
+                {"name": "Lyon", "country": "FRA", "coefficient": 36.0},
+                {"name": "Hoffenheim", "country": "GER", "coefficient": 34.0},
+                {"name": "PAOK", "country": "GRE", "coefficient": 32.0},
+                {"name": "Fenerbahce", "country": "TUR", "coefficient": 30.0},
+                {"name": "Midtjylland", "country": "DEN", "coefficient": 28.0}
+            ],
+            "3": [
+                {"name": "Galatasaray", "country": "TUR", "coefficient": 27.0},
+                {"name": "Viktoria Plzen", "country": "CZE", "coefficient": 26.0},
+                {"name": "Bodo/Glimt", "country": "NOR", "coefficient": 25.0},
+                {"name": "Union SG", "country": "BEL", "coefficient": 24.0},
+                {"name": "Dynamo Kyiv", "country": "UKR", "coefficient": 23.0},
+                {"name": "Ludogorets", "country": "BUL", "coefficient": 22.0},
+                {"name": "Athletic Club", "country": "ESP", "coefficient": 21.0},
+                {"name": "Besiktas", "country": "TUR", "coefficient": 20.0},
+                {"name": "Twente", "country": "NED", "coefficient": 19.0}
+            ],
+            "4": [
+                {"name": "Elfsborg", "country": "SWE", "coefficient": 18.0},
+                {"name": "Qarabag", "country": "AZE", "coefficient": 17.0},
+                {"name": "RFS", "country": "LAT", "coefficient": 16.0},
+                {"name": "FCSB", "country": "ROU", "coefficient": 15.0},
+                {"name": "Maccabi TA", "country": "ISR", "coefficient": 14.0},
+                {"name": "Malmo", "country": "SWE", "coefficient": 13.0},
+                {"name": "Anderlecht", "country": "BEL", "coefficient": 12.0},
+                {"name": "Rigas FS", "country": "LAT", "coefficient": 11.0},
+                {"name": "Nice", "country": "FRA", "coefficient": 10.0}
+            ]
+        }
+    },
+    "conference_league": {
+        "name": "UEFA Conference League 2025/26",
+        "teams_count": 36,
+        "matches_per_team": 6,
+        "home_matches": 3,
+        "away_matches": 3,
+        "pots": {
+            "1": [
+                {"name": "Chelsea", "country": "ENG", "coefficient": 70.0},
+                {"name": "Copenhagen", "country": "DEN", "coefficient": 38.0},
+                {"name": "Gent", "country": "BEL", "coefficient": 36.0},
+                {"name": "Fiorentina", "country": "ITA", "coefficient": 34.0},
+                {"name": "LASK", "country": "AUT", "coefficient": 32.0},
+                {"name": "Partizan", "country": "SRB", "coefficient": 30.0},
+                {"name": "Djurgarden", "country": "SWE", "coefficient": 28.0},
+                {"name": "Vitoria SC", "country": "POR", "coefficient": 26.0},
+                {"name": "Hearts", "country": "SCO", "coefficient": 24.0}
+            ],
+            "2": [
+                {"name": "Basel", "country": "SUI", "coefficient": 23.0},
+                {"name": "Rapid Wien", "country": "AUT", "coefficient": 22.0},
+                {"name": "Heidenheim", "country": "GER", "coefficient": 21.0},
+                {"name": "Molde", "country": "NOR", "coefficient": 20.0},
+                {"name": "Shamrock", "country": "IRL", "coefficient": 19.0},
+                {"name": "Panathinaikos", "country": "GRE", "coefficient": 18.0},
+                {"name": "Lens", "country": "FRA", "coefficient": 17.0},
+                {"name": "Betis", "country": "ESP", "coefficient": 16.0},
+                {"name": "Jagiellonia", "country": "POL", "coefficient": 15.0}
+            ],
+            "3": [
+                {"name": "Cercle Brugge", "country": "BEL", "coefficient": 14.0},
+                {"name": "Astana", "country": "KAZ", "coefficient": 13.0},
+                {"name": "TSC", "country": "SRB", "coefficient": 12.0},
+                {"name": "Noah", "country": "ARM", "coefficient": 11.0},
+                {"name": "St. Gallen", "country": "SUI", "coefficient": 10.0},
+                {"name": "Legia Warsaw", "country": "POL", "coefficient": 9.0},
+                {"name": "HJK Helsinki", "country": "FIN", "coefficient": 8.0},
+                {"name": "Omonia", "country": "CYP", "coefficient": 7.0},
+                {"name": "Vikingur", "country": "ISL", "coefficient": 6.0}
+            ],
+            "4": [
+                {"name": "TNS", "country": "WAL", "coefficient": 5.5},
+                {"name": "Larne", "country": "NIR", "coefficient": 5.0},
+                {"name": "Apoel", "country": "CYP", "coefficient": 4.5},
+                {"name": "Pafos", "country": "CYP", "coefficient": 4.0},
+                {"name": "Borac", "country": "BIH", "coefficient": 3.5},
+                {"name": "Celje", "country": "SLO", "coefficient": 3.0},
+                {"name": "Petrocub", "country": "MDA", "coefficient": 2.5},
+                {"name": "Dinamo Minsk", "country": "BLR", "coefficient": 2.0},
+                {"name": "The New Saints", "country": "WAL", "coefficient": 1.5}
+            ]
+        }
+    }
+}
