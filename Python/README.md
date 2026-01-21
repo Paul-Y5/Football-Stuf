@@ -92,14 +92,14 @@ python3 draw_simulator.py
 
 ## Related Project
 
-**GameAnalytics** - AI-powered player scouting system (separate repository)
+**TalentLens** - AI-powered player scouting system (separate repository)
 
-> This repository was the starting point and inspiration for the larger GameAnalytics project. The experience gained from building these data analysis tools and UEFA simulations led to the development of a full AI-powered scouting system.
+> This repository was the starting point and inspiration for the larger TalentLens project. The experience gained from building these data analysis tools and UEFA simulations led to the development of a full AI-powered scouting system.
 
 - Player detection with YOLO
 - Multi-object tracking
 - Scout report generation
-- [View Repository](https://github.com/YOUR_USERNAME/GameAnalytics)
+- [View Repository](https://github.com/YOUR_USERNAME/TalentLens)
 
 ---
 
