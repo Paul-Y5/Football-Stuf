@@ -1,0 +1,2 @@
+# Runtime dependencies for Data-Register-RankFut
+# Uses only Python standard library (csv, dataclasses, typing, enum, pathlib)
