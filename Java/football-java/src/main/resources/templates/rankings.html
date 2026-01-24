@@ -30,19 +30,19 @@
 
         <div class="stats-grid" th:if="${globalStats != null}">
             <div class="stat-card">
-                <div class="stat-value" th:text="${globalStats.totalClubs ?: 0}">0</div>
+                <div class="stat-value" th:text="${globalStats['totalClubs'] ?: 0}">0</div>
                 <div class="stat-label">Clubs</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" th:text="${globalStats.totalCountries ?: 0}">0</div>
+                <div class="stat-value" th:text="${globalStats['totalCountries'] ?: 0}">0</div>
                 <div class="stat-label">Countries</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" th:text="${#numbers.formatDecimal(globalStats.avgPoints ?: 0, 0, 0)}">0</div>
+                <div class="stat-value" th:text="${#numbers.formatDecimal(globalStats['avgPoints'] ?: 0, 0, 0)}">0</div>
                 <div class="stat-label">Avg Points</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" th:text="${globalStats.maxPoints ?: 0}">0</div>
+                <div class="stat-value" th:text="${globalStats['maxPoints'] ?: 0}">0</div>
                 <div class="stat-label">Max Points</div>
             </div>
         </div>
