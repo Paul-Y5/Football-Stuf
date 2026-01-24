@@ -42,7 +42,7 @@
                 <form th:action="@{/draw/execute}" method="post" id="drawForm">
                     <div class="form-group">
                         <label class="form-label">Competition</label>
-                        <select name="competition" class="form-control">
+                        <select name="competition" class="form-control" title="Select a competition">
                             <option th:each="comp : ${competitions}" th:value="${comp.name()}"
                                 th:text="${comp.displayName}">Competition</option>
                         </select>
