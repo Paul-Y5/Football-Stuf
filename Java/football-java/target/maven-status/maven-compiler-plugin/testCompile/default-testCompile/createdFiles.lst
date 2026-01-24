@@ -1,7 +1,0 @@
-com/football/integration/RankingServiceIT.class
-com/football/e2e/WebEndpointsE2ETest.class
-com/football/unit/model/CountryStatsTest.class
-com/football/integration/FootballDataApiClientIT.class
-com/football/unit/model/ClubTest.class
-com/football/unit/service/DrawSimulatorServiceTest.class
-com/football/FootballApplicationTest.class
