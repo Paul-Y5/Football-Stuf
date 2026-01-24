@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw Result - Football Java</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/" class="navbar-brand">
+            Football<span>Java</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="/rankings">Rankings</a></li>
+            <li><a href="/draw" class="active">Draw Simulator</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1 class="page-title" th:text="${result.competition.displayName + ' Draw'}">Draw</h1>
+            <p class="page-subtitle">
+                ID: <code th:text="${result.id}">abc123</code> |
+                <span th:text="${#temporals.format(result.createdAt, 'dd MMM yyyy HH:mm')}">Date</span>
+            </p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" th:text="${result.clubs.size()}">16</div>
+                <div class="stat-label">Teams</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" th:text="${result.fixtures.size()}">56</div>
+                <div class="stat-label">Fixtures</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" th:text="${result.backtrackCount}">0</div>
+                <div class="stat-label">Backtracks</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" th:class="${result.valid ? 'trend-up' : 'trend-down'}">
+                    <span th:if="${result.valid}">Valid</span>
+                    <span th:unless="${result.valid}">Invalid</span>
+                </div>
+                <div class="stat-label">Status</div>
+            </div>
+        </div>
+
+        <!-- Simulation Banner -->
+        <div th:if="${hasSimulation}" class="alert alert-success"
+            style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <strong>Simulation Complete!</strong>
+                <span th:text="${simulation.getTotalMatches()}">0</span> matches played,
+                <span th:text="${simulation.getTotalGoals()}">0</span> goals scored.
+            </div>
+            <a th:href="@{'/draw/standings/' + ${result.id}}" class="btn btn-primary" style="padding: 0.5rem 1rem;">
+                View Standings
+            </a>
+        </div>
+
+        <div th:unless="${hasSimulation}" style="margin-bottom: 1.5rem;">
+            <form th:action="@{'/draw/simulate/' + ${result.id}}" method="post"
+                style="display: inline-flex; gap: 0.75rem; align-items: center;">
+                <input type="number" name="seed" class="form-control" placeholder="Seed (optional)"
+                    style="width: 150px;">
+                <button type="submit" class="btn btn-primary">Simulate Matches</button>
+            </form>
+        </div>
+
+        <div th:if="${not #lists.isEmpty(errors)}" class="alert alert-error">
+            <strong>Validation Errors:</strong>
+            <ul style="margin-top: 0.5rem; padding-left: 1.25rem;">
+                <li th:each="err : ${errors}" th:text="${err}">Error</li>
+            </ul>
+        </div>
+
+        <!-- Teams by Pot -->
+        <div class="pot-grid">
+            <div class="pot-card" th:each="entry : ${clubsByPot}">
+                <div class="pot-header">Pot <span th:text="${entry.key}">1</span></div>
+                <div class="pot-teams">
+                    <div class="pot-team" th:each="club : ${entry.value}">
+                        <img th:if="${club.crestUrl}" th:src="${club.crestUrl}" alt=""
+                            onerror="this.style.display='none'">
+                        <div>
+                            <div style="font-weight: 500;" th:text="${club.name}">Club</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted);" th:text="${club.country}">Country
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="margin: 1.5rem 0 1rem; font-size: 1.25rem; font-weight: 600;">Match Assignments</h2>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 1rem;">
+            <div class="card" th:each="club : ${result.clubs}">
+                <div class="card-header" style="display: flex; align-items: center; gap: 0.75rem;">
+                    <img th:if="${club.crestUrl}" th:src="${club.crestUrl}"
+                        style="width: 32px; height: 32px; background: white; border-radius: 6px; padding: 3px;" alt=""
+                        onerror="this.style.display='none'">
+                    <div style="flex: 1;">
+                        <div class="card-title" th:text="${club.name}">Club</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted);" th:text="${club.country}">Country
+                        </div>
+                    </div>
+                    <span class="badge badge-pot" th:text="'P' + ${club.pot}">P1</span>
+                </div>
+                <div class="card-body" style="padding: 1rem;">
+                    <div style="margin-bottom: 1rem;">
+                        <strong
+                            style="color: var(--accent-success); font-size: 0.8rem; text-transform: uppercase;">Home</strong>
+                        <div class="fixtures-list" style="margin-top: 0.5rem;">
+                            <div class="fixture-item" th:each="opp : ${club.homeOpponents}">
+                                <span th:text="${opp.shortName}">Opp</span>
+                                <span style="color: var(--text-muted); font-size: 0.8rem;"
+                                    th:text="${opp.country}">Country</span>
+                            </div>
+                            <div th:if="${#lists.isEmpty(club.homeOpponents)}"
+                                style="color: var(--text-muted); padding: 0.5rem; font-size: 0.875rem;">
+                                None assigned
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <strong
+                            style="color: var(--accent-primary); font-size: 0.8rem; text-transform: uppercase;">Away</strong>
+                        <div class="fixtures-list" style="margin-top: 0.5rem;">
+                            <div class="fixture-item" style="border-left-color: var(--accent-secondary);"
+                                th:each="opp : ${club.awayOpponents}">
+                                <span th:text="${opp.shortName}">Opp</span>
+                                <span style="color: var(--text-muted); font-size: 0.8rem;"
+                                    th:text="${opp.country}">Country</span>
+                            </div>
+                            <div th:if="${#lists.isEmpty(club.awayOpponents)}"
+                                style="color: var(--text-muted); padding: 0.5rem; font-size: 0.875rem;">
+                                None assigned
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem;">
+            <a href="/draw" class="btn btn-primary">New Draw</a>
+            <a th:if="${hasSimulation}" th:href="@{'/draw/standings/' + ${result.id}}" class="btn btn-secondary">View
+                Standings</a>
+            <a th:href="@{'/draw/api/result/' + ${result.id}}" class="btn btn-secondary" target="_blank">View JSON</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        Football Java | Spring Boot
+    </footer>
+</body>
+
+</html>

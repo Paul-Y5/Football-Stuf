@@ -1,0 +1,16 @@
+services:
+  football-java:
+    build: .
+    container_name: football-java
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      - FOOTBALL_API_KEY=${FOOTBALL_API_KEY}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8080/rankings"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

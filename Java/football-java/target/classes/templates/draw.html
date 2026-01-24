@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw Simulator - Football Java</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/" class="navbar-brand">
+            Football<span>Java</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="/rankings">Rankings</a></li>
+            <li><a href="/draw" class="active">Draw Simulator</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1 class="page-title">UEFA Draw Simulator</h1>
+            <p class="page-subtitle">Simulate official UEFA competition draws with match results</p>
+        </header>
+
+        <div th:if="${error}" class="alert alert-error" th:text="${error}">Error</div>
+
+        <div th:unless="${apiConfigured}" class="alert alert-warning">
+            API not configured. Using sample teams for demonstration.
+        </div>
+
+        <div class="card" style="max-width: 500px;">
+            <div class="card-header">
+                <h2 class="card-title">Configure Draw</h2>
+            </div>
+            <div class="card-body">
+                <form th:action="@{/draw/execute}" method="post" id="drawForm">
+                    <div class="form-group">
+                        <label class="form-label">Competition</label>
+                        <select name="competition" class="form-control">
+                            <option th:each="comp : ${competitions}" th:value="${comp.name()}"
+                                th:text="${comp.displayName}">Competition</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Random Seed (optional)</label>
+                        <input type="number" name="seed" class="form-control" placeholder="Leave empty for random">
+                    </div>
+
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                            <input type="checkbox" name="simulate" value="true" checked
+                                style="width: 18px; height: 18px; accent-color: var(--accent-primary);">
+                            <span>Simulate match results</span>
+                        </label>
+                        <small style="color: var(--text-muted); font-size: 0.8rem;">
+                            Generate standings table with simulated scores
+                        </small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;" id="submitBtn">
+                        Execute Draw
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 2rem;">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Champions League</h3>
+                </div>
+                <div class="card-body">
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        36 teams, 4 pots. Each team plays 8 matches (4 home, 4 away).
+                        Top 8 qualify directly, 9-24 go to playoffs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Europa League</h3>
+                </div>
+                <div class="card-body">
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        36 teams, 4 pots. Same format as Champions League.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Conference League</h3>
+                </div>
+                <div class="card-body">
+                    <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                        36 teams, 4 pots. Each team plays 6 matches.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        Football Java | Spring Boot
+    </footer>
+
+    <script>
+        document.getElementById('drawForm').addEventListener('submit', function () {
+            const btn = document.getElementById('submitBtn');
+            btn.classList.add('loading');
+            btn.textContent = 'Processing';
+        });
+    </script>
+</body>
+
+</html>

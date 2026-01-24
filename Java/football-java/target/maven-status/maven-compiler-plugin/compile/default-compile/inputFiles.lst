@@ -1,0 +1,17 @@
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/model/Club.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/service/MatchSimulationService.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/model/TrendDirection.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/controller/DrawController.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/FootballApplication.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/model/StandingsEntry.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/api/FootballDataApiClient.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/model/MatchResult.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/model/Competition.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/model/DrawResult.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/controller/RankingController.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/service/RankingService.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/service/DrawSimulatorService.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/controller/HomeController.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/config/DataInitializer.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/model/Fixture.java
+/home/paul-pc/ProjetosP/Football-Stuff/Java/football-java/src/main/java/com/football/model/CountryStats.java

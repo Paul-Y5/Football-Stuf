@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standings - Football Java</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <style>
+        .standings-zone {
+            border-left: 4px solid transparent;
+        }
+
+        .zone-qualified {
+            border-left-color: var(--accent-success);
+            background: rgba(34, 197, 94, 0.05);
+        }
+
+        .zone-playoff {
+            border-left-color: var(--accent-warning);
+            background: rgba(234, 179, 8, 0.05);
+        }
+
+        .zone-eliminated {
+            border-left-color: var(--accent-danger);
+            background: rgba(239, 68, 68, 0.05);
+        }
+
+        .position-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .position-top8 {
+            background: var(--accent-success);
+            color: white;
+        }
+
+        .position-playoff {
+            background: var(--accent-warning);
+            color: #1a1a24;
+        }
+
+        .position-out {
+            background: var(--accent-danger);
+            color: white;
+        }
+
+        .matchday-header {
+            background: var(--bg-secondary);
+            padding: 0.75rem 1rem;
+            border-radius: 8px 8px 0 0;
+            font-weight: 600;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .match-row {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            padding: 0.625rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+            gap: 1rem;
+        }
+
+        .match-row:last-child {
+            border-bottom: none;
+        }
+
+        .match-home {
+            text-align: right;
+        }
+
+        .match-away {
+            text-align: left;
+        }
+
+        .match-score {
+            font-weight: 700;
+            padding: 0.375rem 0.75rem;
+            background: var(--bg-hover);
+            border-radius: 6px;
+            min-width: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/" class="navbar-brand">
+            Football<span>Java</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="/rankings">Rankings</a></li>
+            <li><a href="/draw" class="active">Draw Simulator</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1 class="page-title" th:text="${result.competition.displayName + ' Standings'}">Standings</h1>
+            <p class="page-subtitle">
+                <span th:text="${simulation.getTotalMatches()}">0</span> matches |
+                <span th:text="${simulation.getTotalGoals()}">0</span> goals |
+                <span th:text="${#numbers.formatDecimal(simulation.getAvgGoalsPerMatch(), 1, 2)}">0.00</span> avg/match
+            </p>
+        </header>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" th:text="${standings.size()}">16</div>
+                <div class="stat-label">Teams</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" th:text="${simulation.getTotalMatches()}">56</div>
+                <div class="stat-label">Matches</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" th:if="${simulation.getLeader() != null}"
+                    th:text="${simulation.getLeader().points}">0
+                </div>
+                <div class="stat-label">Leader Points</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" th:text="${simulation.getTotalGoals()}">0</div>
+                <div class="stat-label">Total Goals</div>
+            </div>
+        </div>
+
+        <!-- Standings Table -->
+        <div class="card">
+            <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
+                <h2 class="card-title">League Table</h2>
+                <div style="display: flex; gap: 1rem; font-size: 0.75rem;">
+                    <span><span style="color: var(--accent-success);">●</span> Round of 16</span>
+                    <span><span style="color: var(--accent-warning);">●</span> Playoffs</span>
+                    <span><span style="color: var(--accent-danger);">●</span> Eliminated</span>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 50px;">#</th>
+                            <th>Club</th>
+                            <th style="text-align: center;">P</th>
+                            <th style="text-align: center;">W</th>
+                            <th style="text-align: center;">D</th>
+                            <th style="text-align: center;">L</th>
+                            <th style="text-align: center;">GF</th>
+                            <th style="text-align: center;">GA</th>
+                            <th style="text-align: center;">GD</th>
+                            <th style="text-align: center;">Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="entry, stat : ${standings}"
+                            th:class="${stat.index < 8 ? 'zone-qualified' : (stat.index < 24 ? 'zone-playoff' : 'zone-eliminated')} + ' standings-zone'">
+                            <td>
+                                <span
+                                    th:class="'position-badge ' + (${stat.index < 8} ? 'position-top8' : (${stat.index < 24} ? 'position-playoff' : 'position-out'))"
+                                    th:text="${stat.index + 1}">1</span>
+                            </td>
+                            <td>
+                                <div class="club-row">
+                                    <img th:if="${entry.club.crestUrl}" th:src="${entry.club.crestUrl}" alt=""
+                                        class="club-crest" onerror="this.style.display='none'">
+                                    <span class="club-name" th:text="${entry.club.name}">Club</span>
+                                </div>
+                            </td>
+                            <td style="text-align: center;" th:text="${entry.played}">0</td>
+                            <td style="text-align: center;" th:text="${entry.won}">0</td>
+                            <td style="text-align: center;" th:text="${entry.drawn}">0</td>
+                            <td style="text-align: center;" th:text="${entry.lost}">0</td>
+                            <td style="text-align: center;" th:text="${entry.goalsFor}">0</td>
+                            <td style="text-align: center;" th:text="${entry.goalsAgainst}">0</td>
+                            <td style="text-align: center;"
+                                th:class="${entry.goalDifference > 0 ? 'trend-up' : (entry.goalDifference < 0 ? 'trend-down' : '')}"
+                                th:text="${entry.goalDifference > 0 ? '+' + entry.goalDifference : entry.goalDifference}">
+                                0</td>
+                            <td style="text-align: center; font-weight: 700;" th:text="${entry.points}">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Match Results by Matchday -->
+        <h2 style="margin: 2rem 0 1rem; font-size: 1.25rem; font-weight: 600;">Match Results</h2>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem;">
+            <div class="card" th:each="matchdayEntry : ${matchdays}">
+                <div class="matchday-header">
+                    Matchday <span th:text="${matchdayEntry.key}">1</span>
+                </div>
+                <div th:each="match : ${matchdayEntry.value}" class="match-row">
+                    <div class="match-home">
+                        <span th:text="${match.home.shortName}">Home</span>
+                    </div>
+                    <div class="match-score" th:text="${match.homeGoals + ' - ' + match.awayGoals}">0 - 0</div>
+                    <div class="match-away">
+                        <span th:text="${match.away.shortName}">Away</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Actions -->
+        <div style="margin-top: 2rem; display: flex; gap: 0.75rem;">
+            <a th:href="@{'/draw/result/' + ${result.id}}" class="btn btn-secondary">Back to Draw</a>
+            <a href="/draw" class="btn btn-primary">New Draw</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        Football Java | Spring Boot
+    </footer>
+</body>
+
+</html>
