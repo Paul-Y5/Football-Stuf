@@ -4,6 +4,7 @@ import com.football.api.FootballDataApiClient;
 import com.football.model.Club;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
@@ -15,8 +16,10 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Service that automatically updates rankings from the API.
  * Runs periodically to fetch latest standings from major leagues.
+ * Can be disabled by setting football.autoupdate.enabled=false
  */
 @Service
+@ConditionalOnProperty(name = "football.autoupdate.enabled", havingValue = "true", matchIfMissing = true)
 public class AutoUpdateService {
 
     private static final Logger log = LoggerFactory.getLogger(AutoUpdateService.class);
